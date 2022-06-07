@@ -1,0 +1,25 @@
+#for read
+type Query {
+    Items(input: FilterItem): [Item!]!
+    Options(input: FilterOption):[Option!]!
+    Categories(input: FilterCategory):[Category!]!
+}
+#filter item
+input FilterItem {
+    id: Int
+    Name: String
+}
+
+#filter option
+input FilterOption {
+    id: Int
+    OptionName: String
+}
+
+#filter category
+input FilterCategory {
+    id: Int
+    CategoryName: String
+}
+
+
